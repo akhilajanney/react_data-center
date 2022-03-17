@@ -1,0 +1,269 @@
+/* <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+<style>
+
+
+button {
+    position: absolute;
+    content: "";
+    left: 20%;
+    top: 67px;
+    width: 20%;
+    height: 11%;
+    z-index: 1;
+    opacity: 1;
+    background-color: #c51f25;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    transform: skewX(
+-25deg);
+}
+button:hover{
+left:1%;
+ transform: skewX(
+-1deg);
+ width: 180px;
+ height: 50px;
+ top: 67px;
+}
+
+.btns{
+
+ width: 150px;
+ height: 50px;
+background-color:green;
+ background-size: 200% 200%;
+}
+
+.btns a {
+    padding: 5px 12px;
+    font-size: 13px;
+    margin-right: 4px;
+   
+    
+}
+.btn-style-one .txt {
+    position: relative;
+    z-index: 1;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Card</h2>
+<div class="btns">
+
+      <button>hhh</button>
+  
+</div>
+</div> */
+
+
+
+
+
+
+
+/* <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 35%;
+  height:200px;
+  border:1px  solid black;
+  background-size: 200% 200%;
+}
+.icons{
+font-size:50px;
+margin-top:10px;
+margin-left:10px;
+width:80px;
+}
+.headertop{
+display:flex;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+.card:hover {
+background-image: 
+linear-gradient(to top, #A72424 51%, transparent 50%);
+background-position: 0 100%;
+-webkit-transition: background-position 900ms, color 900ms ease;
+transition: background-position 900ms, color 900ms ease;
+}
+</style>
+</head>
+<body>
+
+<h2>Card</h2>
+
+<div class="card">
+
+<div class="headertop">
+ <div class="icons">
+	<i class="fa fa-plug" ></i>
+	</div>  
+     <div class="titles">
+		<h5>sensor</h5>
+	</div>  
+   </div>
+   <p>uhdfsighftyfghkjhgfvcdgyhu</p>
+</div>
+
+</body>
+</html>  */
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+   margin:0;
+   padding:0;
+   user-select:none;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+.sidebar{
+   position: fixed;
+   width: 250px;
+   height: 100%;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   background: #1b1b1b;
+   box-shadow: 5px 60px 5px grey;
+   overflow: hidden;
+}
+
+.sidebar{
+   color: #FFF;
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 65px;
+   background: #1e1e1e;
+   letter-spacing: 1px
+}
+
+.text{
+   color: #FFF;
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 65px;
+   text-align: center;
+   border-bottom: 1px solid gray;
+   background: #1e1e1e;
+   letter-spacing: 1px
+}
+
+.logoImg{
+   width: 82%;
+    padding: 3px;
+    margin-bottom: 14px;
+    margin-left: 2vw;
+    /* margin-top: 10px; */
+}
+
+
+nav ul{
+   background: #1b1b1b;
+   height: 100%;
+   width: 100%;
+   list-style: none;
+}
+
+nav ul li{
+   line-height: 50px;
+   border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+nav ul li:last-child{
+   line-height: 50px;
+   border-bottom: 1px solid rgba(90, 90, 0,0);
+}
+
+nav ul li a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 20px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+
+/* nav ul li a:hover{
+   color: cyan;
+   background: #575353;
+   border-left-color: cyan;
+   font-weight: bold;
+   transform: scaleX(1.05);
+} */
+
+nav ul li a:hover{
+   color: cyan;
+   /* background: #252525; */
+   /* border-left-color: cyan; */
+   font-weight: bold;
+   transform: scaleX(1.05);
+}
+
+nav ul ul{
+   position: static;
+   display: none;
+}
+
+nav ul .feat_show.show{
+   display: block;
+}
+
+nav ul ul li{
+   line-height: 42px;
+   border-bottom: none;
+}
+
+nav ul ul li a{
+   font-size: 17px;
+   color: #e6e6e6;
+   /* padding-left: 80px; */
+}
+
+nav ul li a span{
+   position: absolute;
+   top: 50%;
+   right: 20px;
+   transform: translateY(-50%);
+   font-size: 22px;
+   transition: transform 0.4s;
+}
+
+nav ul li a span.rotate{
+   transform: translateY(-50%) rotate(-180deg);
+}

@@ -1,0 +1,137 @@
+.flipcard {
+    background-color: transparent;
+    width: 150px;
+    height: 100px;
+    perspective: 1000px;
+    border-radius: 5px;
+ }
+  
+  .flipcardinner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 5px;
+  }
+  
+  .flipcard:hover .flipcardinner {
+    transform: rotateX(180deg);
+  }
+  
+  .flipcardfront, .flipcardback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flipcardfront {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flipcardback {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateX(180deg);
+  }
+  #sensorfront{
+     background-image: linear-gradient(150deg, #ccf5cc, #9b3a1d);
+     
+     /* background-image: linear-gradient(150deg,#262642f7); */
+    }
+    #rackfront{
+         background-image:  linear-gradient(150deg, #ffd9e8, #4a162b);
+     }
+     #front{
+         background-image: linear-gradient(150deg, #d9e8f0, #036a28);
+    }
+    #capacityfront{
+        background-image:  linear-gradient(150deg, #bdebfa, #212130);
+    }
+
+  .details{
+      display: flex;
+    }
+
+  .icons{
+      font-size: 46px;
+      margin-top: 16px;
+      margin-left: 2px;
+      width: 31%;
+      color: black;
+    }
+  .headers{
+        margin-top: 25px;
+        margin-left: 16px;
+  }
+  .headers p{
+      font-size: 20px;
+       color: white;
+       /* color: cyan; */
+       margin-bottom: 0px;
+  }
+  @media only screen and (min-width: 768px) {
+    .subcard{
+        display:flex;
+        margin-bottom: 15px;
+    }
+    .subcard1{
+        display:flex
+    }
+    .flipcard {
+        margin-left: 15px;
+        border-radius: 10px;
+        height: 100px;
+        width: 250px;   
+    }
+    .headers p{
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    .maincard{
+        margin-left: 20px;
+    }
+  }
+  @media only screen and (min-width: 925px) {
+       .subcard{
+       
+    }
+    .maincard{
+        margin-left: 67px;
+    }
+    .flipcard {
+        width: 280px;
+    }
+    .headers p{
+        font-size: 19px;
+        margin-left: 21px;
+    }
+    .icons{
+    font-size: 59px;
+    margin-top: 2px;
+    }
+}
+
+  @media only screen and (min-width: 1024px) {
+    .maincard{
+        display:flex;
+        margin-left: 7px;
+    }
+    .flipcard {
+        margin-left: 15px;
+        width: 180px;
+        width: 177px;
+    }
+  }
+
+  @media only screen and (min-width: 1300px) {
+    .flipcard {
+        margin-left: 15px;
+        width: 237px;
+      }
+  }

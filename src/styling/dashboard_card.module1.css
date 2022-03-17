@@ -1,0 +1,152 @@
+
+/* rack */
+.rackflipcard {
+    background-color: transparent;
+    width: 44%;
+    height: 100px;
+    perspective:500px;
+    border-radius: 10px;
+  } 
+  .rackflipcardinner {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    border-radius: 5px;
+    /* box-shadow: -13px 11px 6px 0px rgb(28 2 2 / 55%); */
+  }
+  .rackflipcardfront h3,.rackflipcardback h3{
+      margin-top: 18px;
+      /* text-transform: uppercase; */
+      font-weight: bold;
+      color: #FFF;
+  }
+  .rackflipcardfront h5,.rackflipcardback h5{
+    margin-top: 10px;
+    /* text-transform: uppercase; */
+    color: #FFF;
+    font-weight: bold;
+    text-align: right;
+}
+  .rackflipcard:hover .rackflipcardinner {
+    transform: rotateX(180deg);
+  }
+  
+  .rackflipcardfront, .rackflipcardback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  .rackflipcardfront {
+    background-color: #dc3545a3;
+    color: white;
+    border-radius: 16px;
+  }
+  .rackflipcardback {
+    /* background-color: #dc3545a3; */
+    color: white;
+    transform: rotateX(180deg);
+    border-radius: 16px;
+  }
+  
+  #front{
+      background-image: linear-gradient(150deg, #d9e8f0, #006699);
+  }
+
+  #capacityfront{
+    background-image:  linear-gradient(150deg, #bdebfa, #3b3dcf);
+  }
+  #rackfront{
+    /* background-color: #dc3545a3; */
+    background-image:  linear-gradient(150deg, #ffd9e8, #ff0066);
+  }
+  #font,#font1{
+      color: #291e29bf;
+  }
+  
+  #sensorfront{
+      /* background-color: #0d6efdbf */
+      background-image: linear-gradient(150deg, #ccf5cc, #0dcf0d);
+  }
+  .rackmain{
+      display: flex;
+  }
+  .rack1{
+        width: 39%;
+        display: inline-block;
+  }
+  .rack1 i{
+      font-size: 60px;
+      margin-top: 25px;
+  }
+  .rack2{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 7px;
+    display: inline-block;
+  }
+  .rack2 h3,h5{
+      font-size: 20px;
+      text-align: right;
+  }
+
+
+  @media only screen and (min-width: 768px) {
+    /* .rackflipcard{
+      height: 84px;
+    } */
+    .rackflipcard {
+      background-color: transparent;
+      width: 34% !important;
+      display: inline-block;
+    }
+      #font{
+        font-size: 43px;
+      }
+      #font1{
+        font-size: 43px;
+      }
+        .rack2{
+          font-size: 13px;
+        }
+        .mainflip{
+          /* display: flex; */
+          /* margin-left: 35px; */
+          /* justify-content: space-around; */
+          /* margin-bottom: 18px; */
+          /* background-color: black;  */
+        }
+        .subflip{
+          /* display: flex; */
+          /* margin-left: 35px; */
+          /* justify-content: space-around; */
+          /* background-color: black;  */
+        }
+    }
+        
+     
+        
+        
+        @media only screen and (min-width: 1024px) {
+          .flexbox{
+          /* display: flex !important; */
+          display: inline-block;
+          justify-content: space-between;
+          margin-left: 15px;
+          margin: 2px;
+        }
+        .rackflipcard {
+          background-color: transparent;
+          width: 24% !important;
+          margin-left: 12px;
+          display: flex !important;
+        }
+ 
+
+        }
+        
+

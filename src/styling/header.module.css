@@ -1,0 +1,61 @@
+.header_container{
+   width: 100%;
+   height: 60px;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   padding-top: 5px;
+   position: fixed;
+   /* overflow: hidden; */
+   background-color: #1b1b1b;
+   /* box-shadow: 5px 5px 5px grey; */
+}
+
+.heading {
+   padding: 10px;
+   margin-right: 2vw;
+   float: right;
+}
+#headericon{
+   color: #FFF;
+   font-size: 25px;
+   margin-right: 25px;
+   cursor: pointer;
+}
+
+.logout_image{
+   width: 32px;
+   height: 25px;
+   margin-bottom: 18px;
+   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+   .heading {
+      padding: 8px;
+   }
+   #headericon{
+      font-size: 25px;
+      margin-top: 5px;
+   }
+
+}
+@media only screen and (min-width: 925px) {
+   #headericon{
+      font-size: 25px;
+   }
+   .heading {
+      padding: 5px;
+   }
+
+}
+
+@media only screen and (min-width: 1024px) {
+   .heading {
+      padding: 8px;
+   }
+   #headericon{
+      font-size: 25px;
+      margin-top: 6px;
+   }
+}

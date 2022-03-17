@@ -1,0 +1,182 @@
+/* Reset */
+*{margin:0;padding:0;}
+
+/* Slider */
+.parent_slider{
+  margin-top: 20px;
+  width:100%;
+  /* height:500px; */
+  height: 100%;
+  position:relative;
+  overflow:hidden;
+}
+.slides{
+  width:400%;
+  height:100%;
+  position:relative;
+  animation:slide 20s infinite;
+}
+.slider{
+  width:25%;
+  height:100%;
+  float:left;
+}
+.slide img{
+  width:100%;
+  height:100%;
+}
+
+#imageslide{
+  width: 100%;
+  height: 450px;
+  /* border-radius: 5px; */
+}
+
+
+
+.overview_circle{
+  margin: 7px;
+  width: 12px;
+  height: 12px;
+  background: green;
+  border-radius: 12px;
+}
+
+.sensors{
+  position: absolute;
+  left: 92px;
+  display: flex;
+  font-size: 19px;
+  font-weight: 600;
+  top: 145px;
+  color: #0062da;
+}
+
+.assets{
+  position: absolute;
+  left: 93px;
+  display: flex;
+  font-size: 19px;
+  font-weight: 600;
+  top: 324px;
+  color: #0062da;
+}
+
+.thsensors{
+  position: absolute;
+   display: flex;
+  left: 360px;
+  font-size: 19px;
+  font-weight: 600;
+  top: 235px;
+  color: #0062da;
+}
+
+.slave{
+  position: absolute;
+   display: flex;
+  right: 333px;
+  font-size: 19px;
+  font-weight: 600;
+  top: 245px;
+  color: #0062da;
+}
+
+.master{
+  position: absolute;
+   display: flex;
+  right: 80px;
+  font-size: 19px;
+  font-weight: 600;
+  top: 247px;
+  color: #0062da;
+}
+
+
+
+/* Animation */
+
+@keyframes slide{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:-100%;
+  }
+  46%{
+    margin-left:-100%;
+  }
+  50%{
+    margin-left:-200%;
+  }
+  71%{
+    margin-left:-200%;
+  }
+  75%{
+    margin-left:-300%;
+  }
+  96%{
+    margin-left:-300%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .parent_slider{
+    margin-left: 35px;
+    width: 89%;
+    /* border-radius: 30px; */
+  }
+  #imageslide{
+    height: 200px;
+    /* width: 100%; */
+  }
+  }
+  @media only screen and (min-width: 925px) {
+    .parent_slider{
+      margin-left: 82px;
+      width: 81%;
+    }
+    /* .overview img{
+      width: 81%;
+      height: 350px;
+      margin-left: 81px;
+    } */
+  }
+
+  @media only screen and (min-width: 1024px) {
+      #imageslide{
+        height: 310px;
+        }
+      .parent_slider{
+        margin-left: 22px;
+        width: 97%;     
+       }
+      /* .serverrack{
+        left: 106px;
+        top:196px
+      }
+      .assets{
+        bottom: 67px;
+        left: 109px;
+      }
+      .racks{
+        left: 310px;
+      }
+      .sensors{
+        left: 310px;
+      }
+      .tags{
+        left: 310px;
+      }
+      .slave{
+        left: 511px;
+      }
+      .master{
+        left: 678px;
+      } */
+
+
+  }
+  

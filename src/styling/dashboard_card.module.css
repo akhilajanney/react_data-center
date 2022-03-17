@@ -1,0 +1,94 @@
+
+/* rack */
+.rackflipcard {
+    background-color: transparent;
+    width: 24%;
+    height: 100px;
+    perspective:500px;
+    border-radius: 10px;
+  } 
+  .rackflipcardinner {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    border-radius: 5px;
+    /* box-shadow: -13px 11px 6px 0px rgb(28 2 2 / 55%); font-size: 19px;
+    font-weight: 600;*/
+  }
+  .rackflipcardfront p,.rackflipcardback p{
+      font-size: 19px;
+      font-weight: 600;
+      margin-bottom: 0px;
+  }
+  .rackflipcardfront h3,.rackflipcardback h3{
+    color: #0070ffc2;
+    float: right;
+    /* font-weight: 600; */
+  }
+
+  .rackflipcard:hover .rackflipcardinner {
+    transform: rotateX(180deg);
+  }
+  
+  .rackflipcardfront, .rackflipcardback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  .rackflipcardfront {
+    background-color: #d4d4d4cf;
+    color: white;
+    border-radius: 5px;
+  }
+  .rackflipcardback {
+    background-color: #d4d4d4cf;
+    color: white;
+    transform: rotateX(180deg);
+    border-radius: 5px;
+  }
+  .mainflip{
+      display: flex;
+      justify-content: space-between;
+  }
+  #front{
+      /* background-image: linear-gradient(150deg, #d9e8f0, #006699); */
+  }
+
+  #capacityfront{
+    /* background-image:  linear-gradient(150deg, #bdebfa, #3b3dcf); */
+  }
+  #rackfront{
+    /* background-image:  linear-gradient(150deg, #ffd9e8, #ff0066); */
+  }
+  #font,#font1{
+      color: #291e29bf;
+  }
+  
+  #sensorfront{
+      /* background-image: linear-gradient(150deg, #ccf5cc, #0dcf0d); */
+  }
+  .rackmain{
+      display: flex;
+  }
+  .rack1{
+        width: 39%;
+        color: #606060db;
+    }
+  .rack1 i{
+    font-size: 45px;
+    margin-top: 30px;
+  }
+
+  .rack2{
+    color: #564256;
+    font-size: 15px;
+    margin-top: 23px;
+  }
+
+
+
